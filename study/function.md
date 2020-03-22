@@ -35,6 +35,13 @@ let x = 5;
 ```
 let f: fn(i32) -> i32;
 ```
+
+```
+fn plus_one(i: i32) -> i32 {
+    i + 1
+}
+let f: fn(i32) -> i32 = plus_one;
+```
 - 上記で関数を呼び出すために`f`を使える
 ```
 let six = f(5);
